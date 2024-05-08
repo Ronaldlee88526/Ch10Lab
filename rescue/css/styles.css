@@ -29,7 +29,7 @@ img, video{
   display: block;
 }
 
-.tab-desk .desktop{
+.tab-desk .desktop #nav-links{
   display: none;
 }
 
@@ -42,6 +42,7 @@ img, video{
   padding: 2%;
   text-align: center;
   font-family: 'Emblema One';
+  margin: 2% 0 0 3%;
 }
 
 .mobile h3{
@@ -55,27 +56,28 @@ nav{
   background-color: #2a1f14;
 }
 
-nav ul{
-  list-style-type: none;
-  text-align: center;
+.mobile-nav a {
+ color: #fff;
+ text-align: center;
+ font-size: 2em;
+ text-decoration: none;
+ padding: 3%;
+ display: block;
 }
 
-nav li{
-  display: block;
-  font-size: 1.5em;
-  font-family: Geneva, Arial, sans-serif;
-  font-weight: bold;
-  border-top: 0.5px solid #f6eee4;
+.mobile-nav a.nav-icon {
+ display: block;
+ position: absolute;
+ left: 0;
+ top: 0;
+ color: #f6eee4;
+ padding: 2%;
 }
 
-nav li a{
-  display: block;
-  color: #f6eee4;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 2em;
-  padding-right: 2em;
-  text-decoration: none;
+.nav-icon div {
+ height: 40px;
+ width: 40px;
+ color: #2a1f14;
 }
 
 /*Style rules for main content*/
@@ -185,6 +187,21 @@ figcaption{
   margin-right: auto;
 }
 
+#questions p {
+  cursor: pointer;
+}
+
+#answer {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#answer h2 {
+  display: none;
+}
+
 .tel-link a{
   color: #f6eee4;
   text-decoration: none;
@@ -242,7 +259,7 @@ footer a{
     display: block;
   }
 
-  .mobile{
+  .mobile .mobile-nav{
     display: none;
   }
 
@@ -251,10 +268,15 @@ footer a{
     border-top: none;
     display: inline-block;
     font-size: 1.25em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
   }
 
   nav li a{
     padding: 0.5em;
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
   }
 
   .grid{
@@ -265,6 +287,11 @@ footer a{
 
   aside{
     grid-column: 1 / span 2;
+  }
+
+  nav ul{
+    list-style-type: none;
+    text-align: center;
   }
 
   /*Tablet Viewport: Style rule for form element*/
